@@ -56,6 +56,7 @@ export const setupPreviewUpdating = (
     shape: node.shape,
     showGlow: node.showGlow,
     label: node.label,
+    property: node.property || 'payload',
     labelPlacement: node.labelPlacement || 'left',
     labelAlignment: node.labelAlignment || 'left'
   }
