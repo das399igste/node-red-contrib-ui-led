@@ -36,6 +36,7 @@ export const defaultsFactory = (
       value: '',
       validate: validateLabelFactory(RED)
     },
+    property: {value: 'payload' },
     labelPlacement: { value: 'left' },
     labelAlignment: { value: 'left' },
 
