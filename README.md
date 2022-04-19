@@ -13,6 +13,7 @@ The node uses `msg.payload`'s value to determine status. By default:
 - `msg.payload` === `true` - **Green**
 - `msg.payload` === `false` - **Red**
 - no `msg` received yet or `msg.payload` !== `true` and `msg.payload` !== `false` - **Gray**
+- The input can now also be transferred via a freely definable property.
 
 ## Install
 
