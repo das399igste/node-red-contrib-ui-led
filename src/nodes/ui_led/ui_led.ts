@@ -26,6 +26,7 @@ const nodeInit: NodeInitializer = (RED): void => {
       this.colorForValue = mapColorForValue(this, config.colorForValue, RED)
       this.allowColorForValueInMessage = config.allowColorForValueInMessage
       this.showGlow = config.showGlow !== undefined ? config.showGlow : true
+      this.property = config.property !== undefined ? config.property : "payload";
       this.toString = nodeToStringFactory(config)
 
       // TODO: support theme and dark
@@ -57,7 +58,7 @@ const nodeInit: NodeInitializer = (RED): void => {
 
         emitOnlyNewValues: false,
 
-        beforeEmit: beforeEmitFactory(this, RED),
+        beforeEmit: beforeEmitFactory(this, RED, config.property),
 
         initController
       })
