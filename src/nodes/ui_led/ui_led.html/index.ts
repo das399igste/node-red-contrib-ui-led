@@ -62,6 +62,12 @@ const oneditprepare = function (this: LEDEditorNodeInstance) {
     this.showGlow = true
     setChecked('#' + showGlowId, this.showGlow)
   }
+  
+  if (this.property === undefined) {
+    $("#node-input-property").val("payload");
+  }
+  
+  $("#node-input-property").typedInput({ default: 'msg', types: ['msg'] });
 
   setupColorForValue(this)
 
@@ -89,5 +95,6 @@ RED.nodes.registerType('ui_led', {
   icon: 'ui_led.png',
 
   oneditprepare,
-  oneditsave
+  oneditsave,
+  property: { value: "payload", required: true }
 })
