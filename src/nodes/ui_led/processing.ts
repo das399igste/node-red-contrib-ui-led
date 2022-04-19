@@ -52,7 +52,8 @@ const getColorForValue = (
 
 export const beforeEmitFactory = (
   node: LEDNode,
-  RED: NodeAPI<nodeRed.NodeAPISettingsWithData>
+  RED: NodeAPI<nodeRed.NodeAPISettingsWithData>,
+  property
 ) => {
   return (
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -70,8 +71,10 @@ export const beforeEmitFactory = (
       }
     }
     const colorForValue = node.overrideColorForValue || node.colorForValue
+    
+    var val = RED.util.getMessageProperty(msg, property);
 
-    const [color, glow] = getColorForValue(colorForValue, value, RED)
+    const [color, glow] = getColorForValue(colorForValue, val, RED)
 
     return {
       msg: {
