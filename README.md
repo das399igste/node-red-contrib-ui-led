@@ -2,9 +2,9 @@
 
 A simple LED status indicator for the Node-RED Dashboard
 
-![CI](https://github.com/Adorkable/node-red-contrib-ui-led/workflows/CI/badge.svg)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FAdorkable%2Fnode-red-contrib-ui-led.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FAdorkable%2Fnode-red-contrib-ui-led?ref=badge_shield)
-[![dependencies](https://img.shields.io/librariesio/release/github/adorkable/node-red-contrib-ui-led?style=flat)](https://github.com/Adorkable/node-red-contrib-ui-led/network/dependencies)
+![CI](https://github.com/das399igste/node-red-contrib-ui-led2/workflows/CI/badge.svg)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdas399igste%2Fnode-red-contrib-ui-led2.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdas399igste%2Fnode-red-contrib-ui-led2?ref=badge_shield)
+[![dependencies](https://img.shields.io/librariesio/release/github/das399igste/node-red-contrib-ui-led2?style=flat)](https://github.com/das399igste/node-red-contrib-ui-led2/network/dependencies)
 
 ![Examples Image](images/examples.png)
 
@@ -19,10 +19,10 @@ The node uses `msg.payload`'s value to determine status. By default:
 To install the node run the following from your Node-RED user directory (`~/.node-red`):
 
 ```bash
-npm install node-red-contrib-ui-led
+npm install node-red-contrib-ui-led2
 ```
 
-Or install the node from the Palette section of your Node-RED editor by searching by name (`node-red-contrib-ui-led`).
+Or install the node from the Palette section of your Node-RED editor by searching by name (`node-red-contrib-ui-led2`).
 
 ## Aesthetics
 
